@@ -48,7 +48,7 @@ if config_env() == :prod do
   # If you are doing OTP releases, you need to instruct Phoenix
   # to start each relevant endpoint:
   #
-       config :personal_web, PersonalWebWeb.Endpoint, server: true
+  config :personal_web, PersonalWebWeb.Endpoint, server: true
   #
   # Then you can assemble a release by calling `mix release`.
   # See `mix help release` for more information.

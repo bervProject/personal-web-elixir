@@ -49,7 +49,7 @@ defmodule PersonalWeb.MixProject do
       {:gettext, "~> 0.18"},
       {:jason, "~> 1.2"},
       {:plug_cowboy, "~> 2.5"},
-      {:absinthe_plug, "~> 1.5"},
+      {:absinthe_plug, "~> 1.5"}
     ]
   end
 
