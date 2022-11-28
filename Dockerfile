@@ -1,6 +1,6 @@
 ARG MIX_ENV="prod"
 
-FROM hexpm/elixir:1.13.2-erlang-23.1.2-alpine-3.13.1 as build
+FROM hexpm/elixir:1.13.2-erlang-23.1.2-alpine-3.16.2 as build
 
 # install build dependencies
 RUN apk add --no-cache build-base git python3 curl
@@ -47,7 +47,7 @@ RUN mix release
 
 # start a new build stage so that the final image will only contain
 # the compiled release and other runtime necessities
-FROM alpine:3.16.3 AS app
+FROM alpine:3.17.0 AS app
 RUN apk add --no-cache libstdc++ openssl ncurses-libs
 
 ARG MIX_ENV
