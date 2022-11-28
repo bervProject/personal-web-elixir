@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-22.04
     strategy:
       matrix:
-        otp: ['24']
+        otp: ['24', '25']
         elixir-version: ['1.13']
     services:
       # Label used to access the service container
