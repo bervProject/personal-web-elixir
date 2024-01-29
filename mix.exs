@@ -52,7 +52,7 @@ defmodule PersonalWeb.MixProject do
       {:mimic, "~> 1.7.1", only: :test},
       {:phoenix, "~> 1.7"},
       {:phoenix_ecto, "~> 4.4"},
-      {:phoenix_html, "~> 3.2"},
+      {:phoenix_html, "~> 4.0"},
       {:phoenix_live_dashboard, "~> 0.7"},
       {:phoenix_live_reload, "~> 1.3", only: :dev},
       {:phoenix_live_view, "~> 0.18"},
