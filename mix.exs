@@ -61,7 +61,7 @@ defmodule PersonalWeb.MixProject do
       {:postgrex, ">= 0.0.0"},
       {:sobelow, "~> 0.11", only: :dev},
       {:swoosh, "~> 1.6"},
-      {:telemetry_metrics, "~> 0.6"},
+      {:telemetry_metrics, "~> 1.0"},
       {:telemetry_poller, "~> 1.0"}
     ]
   end
