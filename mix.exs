@@ -49,7 +49,7 @@ defmodule PersonalWeb.MixProject do
       {:floki, ">= 0.32.1", only: :test},
       {:gettext, "~> 0.19"},
       {:jason, "~> 1.3"},
-      {:mimic, "~> 1.7.1", only: :test},
+      {:mimic, "~> 1.8.2", only: :test},
       {:phoenix, "~> 1.7"},
       {:phoenix_ecto, "~> 4.4"},
       {:phoenix_html, "~> 3.2"},
