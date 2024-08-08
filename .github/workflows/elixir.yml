@@ -11,12 +11,12 @@ jobs:
     strategy:
       matrix:
         otp: ['24', '25']
-        elixir-version: ['1.13']
+        elixir-version: ['1.14', '1.15']
     services:
       # Label used to access the service container
       postgres:
         # Docker Hub image
-        image: postgres:15-alpine
+        image: postgres:16-alpine
         # Provide the password for postgres
         env:
           POSTGRES_PASSWORD: devsecretpassword
