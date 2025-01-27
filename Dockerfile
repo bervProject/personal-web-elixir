@@ -1,6 +1,6 @@
 ARG MIX_ENV="prod"
 
-FROM hexpm/elixir:1.18.1-erlang-27.2-ubuntu-noble-20241118.1 as build
+FROM hexpm/elixir:1.18.2-erlang-27.2-alpine-3.21.2 as build
 
 # install build dependencies
 RUN apk add --no-cache build-base git python3 curl
