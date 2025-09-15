@@ -47,7 +47,7 @@ defmodule PersonalWeb.MixProject do
       {:esbuild, "~> 0.4", runtime: Mix.env() == :dev},
       {:excoveralls, "~> 0.14", only: :test},
       {:floki, ">= 0.32.1", only: :test},
-      {:gettext, "~> 0.19"},
+      {:gettext, "~> 1.0"},
       {:jason, "~> 1.3"},
       {:mimic, "~> 2.1.0", only: :test},
       {:phoenix, "~> 1.7"},
