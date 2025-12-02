@@ -9,9 +9,10 @@ jobs:
     name: Build and test
     runs-on: ubuntu-24.04
     strategy:
+      fail-fast: false
       matrix:
-        otp: ['26', '27']
-        elixir-version: ['1.17', '1.18']
+        otp: ['27', '28']
+        elixir-version: ['1.18']
     services:
       # Label used to access the service container
       postgres:

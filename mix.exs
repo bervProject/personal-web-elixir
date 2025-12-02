@@ -5,7 +5,7 @@ defmodule PersonalWeb.MixProject do
     [
       app: :personal_web,
       version: "0.1.0",
-      elixir: "~> 1.12",
+      elixir: "~> 1.17",
       elixirc_paths: elixirc_paths(Mix.env()),
       compilers: [:gettext] ++ Mix.compilers(),
       test_coverage: [
@@ -60,7 +60,7 @@ defmodule PersonalWeb.MixProject do
       {:phoenix_view, "~> 2.0"},
       {:plug_cowboy, "~> 2.5"},
       {:postgrex, ">= 0.0.0"},
-      {:sobelow, "~> 0.11", only: :dev},
+      {:sobelow, "~> 0.14", only: [:dev, :test], runtime: false, warn_if_outdated: true},
       {:swoosh, "~> 1.6"},
       {:telemetry_metrics, "~> 1.0"},
       {:telemetry_poller, "~> 1.0"}
